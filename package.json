@@ -1,0 +1,293 @@
+{
+    "name": "google-nepali-input",
+    "publisher": "khumnath",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/khumnath/vscode-google-input-nepali"
+    },
+    "displayName": "google-nepali-input",
+    "description": "Input Nepali with online Google input tools",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Keymaps",
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "google-input.toggle",
+                "title": "Toggle Google Input",
+                "icon": "media/logo.png"
+            },
+            {
+                "command": "google-input.accept.selected",
+                "title": "Accept Selected",
+                "icon": "media/logo.png"
+            },
+            {
+                "command": "google-input.input.unsolved",
+                "title": "Input Unsolved",
+                "icon": "media/logo.png"
+            },
+            {
+                "command": "google-input.accept.first",
+                "title": "Accept First",
+                "icon": "media/logo.png"
+            },
+            {
+                "command": "google-input.pagenext",
+                "title": "Page Next",
+                "icon": "media/logo.png"
+            },
+            {
+                "command": "google-input.pageprev",
+                "title": "Page Previous",
+                "icon": "media/logo.png"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "google-input.toggle",
+                "key": "ctrl+space"
+            },
+            {
+                "command": "google-input.accept.selected",
+                "key": "enter",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.input.unsolved",
+                "key": "\\",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.accept.first",
+                "key": "space",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.pagenext",
+                "key": "=",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.pageprev",
+                "key": "-",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.1",
+                "key": "1",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.2",
+                "key": "2",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.3",
+                "key": "3",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.4",
+                "key": "4",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.5",
+                "key": "5",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.6",
+                "key": "6",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.7",
+                "key": "7",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.8",
+                "key": "8",
+                "when": "google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.a",
+                "key": "a",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.b",
+                "key": "b",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.c",
+                "key": "c",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.d",
+                "key": "d",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.e",
+                "key": "e",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.f",
+                "key": "f",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.g",
+                "key": "g",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.h",
+                "key": "h",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.i",
+                "key": "i",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.j",
+                "key": "j",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.k",
+                "key": "k",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.l",
+                "key": "l",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.m",
+                "key": "m",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.n",
+                "key": "n",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.o",
+                "key": "o",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.p",
+                "key": "p",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.q",
+                "key": "q",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.r",
+                "key": "r",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.s",
+                "key": "s",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.t",
+                "key": "t",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.u",
+                "key": "u",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.v",
+                "key": "v",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.w",
+                "key": "w",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.x",
+                "key": "x",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.y",
+                "key": "y",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            },
+            {
+                "command": "google-input.typing.z",
+                "key": "z",
+                "when": "editorTextFocus && google-input.enabled && !google-input.selecting"
+            }
+        ],
+        "views": {
+            "explorer": [
+                {
+                    "id": "googleInputView",
+                    "name": "Google Input",
+                    "icon": "media/logo.png"
+                }
+            ]
+        },
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "googleInputActivityBar",
+                    "title": "Google Input",
+                    "icon": "media/logo.png"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^5.2.6",
+        "@types/node": "^10.14.15",
+        "@types/vscode": "~1.36.0",
+        "glob": "^7.1.4",
+        "mocha": "^6.2.0",
+        "tslint": "^5.12.1",
+        "typescript": "^3.5.3",
+        "vscode-test": "^1.2.0"
+    }
+}
